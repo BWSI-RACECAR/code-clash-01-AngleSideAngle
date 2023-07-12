@@ -32,7 +32,7 @@ class Solution:
             #return type: boolean
             
             #TODO: Write code below to return a boolean value with the solution to the prompt.
-            return s.replace(" ", "").lower() == s.replace(" ", "").lower()[::-1]
+            return len(s) > 6 and s.replace(" ", "").lower() == s.replace(" ", "").lower()[::-1]
 
 def main():
     tc1 = Solution()
